@@ -11,7 +11,7 @@
             padding: 0;
             background-color: #000; /* Black Background */
             color: #0080ff; /* Blue Text */
-            font-family: 'Courier New', Courier, monospace;
+            font-family: 'Times New Roman', Times, serif;
             overflow-x: hidden;
             min-height: 200vh; /* Extra height for scrolling */
         }
@@ -32,7 +32,7 @@
             color: #00c3ff;
             font-size: 20px;
             user-select: none;
-            animation: fall linear forwards;
+            animation: fall 5s linear forwards;
         }
 
         @keyframes fall {
@@ -56,8 +56,9 @@
         }
 
         .para {
-            margin-bottom: 300px; /* Space to allow scrolling reveal */
+            margin-bottom: 400px; /* Space to allow scrolling reveal */
             opacity: 0;
+            transform: translateY(20px);
             transition: opacity 1s ease-out;
             font-size: 1.5rem;
             line-height: 1.6;
@@ -82,7 +83,7 @@
     <div id="heart-container"></div>
 
     <div class="content">
-        <div class="para" data-text="Welcome to my blue-themed sanctuary. Watch the hearts fall as you explore."></div>
+        <div class="para">"Welcome to my blue project."></div>
         <div class="para" data-text="Each paragraph here appears only when you scroll deep enough into the darkness."></div>
         <div class="para" data-text="The letters reveal themselves one by one, like secrets being whispered."></div>
         <div class="para" data-text="GitHub Pages makes it easy to host this aesthetic experience for free."></div>
