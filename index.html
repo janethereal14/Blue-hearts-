@@ -71,6 +71,7 @@
         .char {
             display: inline-block;
             visibility: hidden;
+            margin-right: 0.25em;
         }
 
         .char.typed {
@@ -106,7 +107,7 @@
             }, 5000);
         }
 
-        setInterval(createHeart, 300);
+        setInterval(createHeart, 100);
 
         // 2. Typewriter & Scroll Logic
         const paragraphs = document.querySelectorAll('.para');
@@ -136,7 +137,7 @@
             chars.forEach((char, index) => {
                 setTimeout(() => {
                     char.classList.add('typed');
-                }, index * 50); // Speed of typing
+                }, index * 30); // Speed of typing
             });
         }
     </script>
